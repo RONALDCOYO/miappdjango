@@ -1,0 +1,23 @@
+<!-- templates/miapp/detalle_correspondencia.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de Correspondencia</title>
+</head>
+<body>
+    <h1>Detalle de Correspondencia</h1>
+    <p><strong>Remitente:</strong> {{ correspondencia.remitente }}</p>
+    <p><strong>Destinatario:</strong> {{ correspondencia.destinatario }}</p>
+    <p><strong>Fecha de Recepción:</strong> {{ correspondencia.fecha_recepcion }}</p>
+    <p><strong>Fecha de Envío:</strong> {{ correspondencia.fecha_envio }}</p>
+    <p><strong>Tipo de Documento:</strong> {{ correspondencia.tipo_documento }}</p>
+    <p><strong>Número de Documento:</strong> {{ correspondencia.numero_documento }}</p>
+    <p><strong>Número de Folios:</strong> {{ correspondencia.numero_folios }}</p>
+    <p><strong>Estado:</strong> {{ correspondencia.estado }}</p>
+    <p><strong>Usuario:</strong> {{ correspondencia.usuario }}</p>
+    <!-- Añade más detalles según los campos que desees mostrar -->
+    <a href="{% url 'lista_correspondencia' %}">Volver a la lista de correspondencia</a>
+</body>
+</html>

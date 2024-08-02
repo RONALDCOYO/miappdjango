@@ -1,0 +1,17 @@
+<!-- templates/miapp/lista_tipos_documento.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tipos de Documento</title>
+</head>
+<body>
+    <h1>Lista de Tipos de Documento</h1>
+    <ul>
+        {% for tipo_documento in tipos_documento %}
+            <li>{{ tipo_documento.nombre }} (Prefijo: {{ tipo_documento.prefijo_radicado }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- templates/miapp/lista_usuarios.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuarios</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul>
+        {% for usuario in usuarios %}
+            <li><a href="{% url 'detalle_usuario' usuario.id %}">{{ usuario.nombre }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

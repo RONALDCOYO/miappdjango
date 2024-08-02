@@ -1,0 +1,17 @@
+<!-- templates/miapp/lista_unidades_departamento.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Unidades y Departamentos</title>
+</head>
+<body>
+    <h1>Lista de Unidades y Departamentos</h1>
+    <ul>
+        {% for unidad in unidades_departamento %}
+            <li>{{ unidad.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

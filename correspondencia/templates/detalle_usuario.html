@@ -1,0 +1,16 @@
+<!-- templates/miapp/detalle_usuario.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del Usuario</title>
+</head>
+<body>
+    <h1>{{ usuario.nombre }}</h1>
+    <p><strong>Email:</strong> {{ usuario.email }}</p>
+    <p><strong>Rol:</strong> {{ usuario.rol }}</p>
+    <!-- Añade más detalles según los campos que desees mostrar -->
+    <a href="{% url 'lista_usuarios' %}">Volver a la lista de usuarios</a>
+</body>
+</html>

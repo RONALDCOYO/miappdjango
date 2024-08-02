@@ -1,0 +1,17 @@
+<!-- templates/lista_correspondencia.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Correspondencia</title>
+</head>
+<body>
+    <h1>Lista de Correspondencia</h1>
+    <ul>
+        {% for carta in correspondencia %}
+            <li><a href="{% url 'detalle_correspondencia' carta.id %}">{{ carta.remitente }} a {{ carta.destinatario }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
